@@ -1,0 +1,120 @@
+/* styles.css */
+
+/* General Body and Font Styles */
+body {
+    font-family: 'Lora', serif;
+    background-color: #FDF2F4; /* Very light rose/pink */
+    color: #333333; /* Dark charcoal for readability */
+}
+
+/* Custom Font Classes */
+.font-playfair {
+    font-family: 'Great Vibes', cursive;
+}
+
+.font-lato {
+    font-family: 'Lora', serif;
+}
+
+/* Navigation Item Styling */
+.nav-item {
+    cursor: pointer;
+    position: relative;
+    transition: color 0.3s ease;
+    text-decoration: none; /* Ensure no default underline */
+}
+
+.nav-item::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: -4px;
+    left: 50%;
+    background-color: #D4AF37; /* Muted gold accent */
+    transition: all 0.3s ease-in-out;
+}
+
+.nav-item:hover::after,
+.nav-item.active::after {
+    width: 100%;
+    left: 0;
+}
+
+.nav-item.active,
+.nav-item:hover {
+    color: #D4AF37; /* Muted gold accent */
+}
+
+/* Page Section Styling */
+.page-section {
+    min-height: calc(100vh - 120px); /* Adjust based on header/footer height */
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+/* Hero Section Specifics */
+.hero-gradient {
+    background: linear-gradient(to top, rgba(0,0,0,0.7), rgba(0,0,0,0));
+}
+
+/* General Link Styling within content */
+/* This is the new addition for making hyperlinks visible */
+main a {
+    color: #880000; /* Deep Red for links */
+    text-decoration: underline;
+    transition: color 0.3s ease;
+}
+
+main a:hover {
+    color: #D4AF37; /* Muted Gold on hover */
+    text-decoration: underline;
+}
+
+/* Button Styles */
+.btn-primary {
+    background-color: #880000; /* Deep Red */
+    color: white;
+    font-weight: bold;
+    padding: 0.75rem 1.5rem; /* Equivalent to py-3 px-6 */
+    border-radius: 9999px; /* Equivalent to rounded-full */
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -2px rgba(0, 0, 0, 0.06); /* Equivalent to shadow-md */
+    transition-property: all; /* Equivalent to transition-all */
+    transition-duration: 300ms; /* Equivalent to duration-300 */
+    transition-timing-function: ease-in-out; /* Equivalent to ease-in-out */
+    text-decoration: none; /* Remove underline from links */
+    display: inline-block; /* Allows padding and vertical alignment */
+}
+.btn-primary:hover {
+    background-color: #D4AF37; /* Muted Gold on hover */
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05); /* Equivalent to shadow-lg */
+    transform: scale(1.05); /* Equivalent to scale-105 */
+}
+
+.btn-secondary {
+    background-color: #F7D7DD; /* Muted Pink */
+    color: #880000; /* Deep Red text */
+    font-weight: bold;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    border-radius: 9999px;
+    transition-property: all;
+    transition-duration: 300ms;
+    transition-timing-function: ease-in-out;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.btn-secondary:hover {
+    background-color: #D4AF37; /* Muted Gold on hover */
+    color: white; /* White text on hover for contrast */
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+    transform: scale(1.05);
+}
+
+/* Responsive Utilities (if needed, these would typically be in Tailwind config or directly as Tailwind classes) */
+@media (max-width: 768px) {
+    /* Adjustments for smaller screens */
+}
