@@ -53,10 +53,6 @@ body {
     padding-bottom: 2rem;
 }
 
-/* Hero Section Specifics */
-.hero-gradient {
-    background: linear-gradient(to top, rgba(0,0,0,0.7), rgba(0,0,0,0));
-}
 
 /* General Link Styling within content */
 /* This is the new addition for making hyperlinks visible */
@@ -114,7 +110,56 @@ main a:hover {
     transform: scale(1.05);
 }
 
-/* Responsive Utilities (if needed, these would typically be in Tailwind config or directly as Tailwind classes) */
-@media (max-width: 768px) {
-    /* Adjustments for smaller screens */
+/* Hero Section Specifics */
+.hero-container {
+    position: relative;
+    width: 100%;
+    min-height: 60vh; /* Minimum height, scales up with content */
+    height: auto; /* Allows dynamic height adjustment */
+    background-size: contain; /* Scales image to fit within container, no cropping */
+    background-position: center; /* Centers the image */
+    background-repeat: no-repeat; /* Prevents tiling */
+    background-color: #FDF2F4;
 }
+
+.hero-gradient {
+    background: linear-gradient(to top, rgba(0,0,0,0.7), rgba(0,0,0,0));
+    position: absolute;
+    inset: 0;
+    display: flex;
+    align-items: end;
+}
+
+/* Responsive adjustments */
+@media (min-width: 768px) {
+    .hero-container {
+        min-height: 80vh; /* Larger height on desktop */
+    }
+}
+
+/* Optimize bg-fixed for performance */
+.bg-fixed {
+    will-change: transform;
+    background-attachment: fixed;
+}
+
+/* Responsive Utilities (if needed, these would typically be in Tailwind config or directly as Tailwind classes) */
+@media (max-width: 768px) { 
+	.bg-fixed { 
+		background-attachment: scroll; 
+	}
+    /* Adjustments for smaller screens */
+	.page-section {
+		padding: 1rem 0;
+	}
+	.nav-item {
+		display: block;
+		margin: 0.5rem 0;
+	}
+	.hero-container {
+	min-height: 50vh; /* Adjusted for mobile to ensure visibility */
+   	}
+}
+
+
+
