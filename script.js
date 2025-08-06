@@ -6,12 +6,26 @@ document.addEventListener('DOMContentLoaded', function() {
     console.log('DOM Loaded, interviewsArticlesContent:', interviewsArticlesContent);
 
     const interviewData = [
-        {
+		{
+            title: "You've never heard Elvis like this before, as America's Got Talent Teen Star Angelina Jordan strips back 'Suspicious Minds' to a heartbreaking ballad that had fans in tears",
+            source: "The Music Man Website",
+            link: "https://www.themusicman.uk/angelina-jordan-reimagines-elvis-classic/",
+            date: "July 15, 2025",
+            snippet: "We’ve all heard Elvis Presley’s classic hit “Suspicious Minds,” but did you know that beneath the lush production of the Presley version lies a heartbreaking ballad?"
+        },
+		{
             title: "Angelina Jordan Opens Up About Her New Single and Life in America",
             source: "Forbes",
             link: "https://www.forbes.com/sites/youdonthaveanews.com/angelina-jordan-interview",
             date: "October 26, 2021",
             snippet: "In an exclusive interview, Angelina discusses her creative process, musical influences, and the experience of moving to the United States to pursue her career."
+        },
+        {
+            title: "Angelina Jordan on joining the industry young, 'Million Miles', and more",
+            source: "The Honey Pop Website",
+            link: "https://thehoneypop.com/2021/03/23/angelina-jordan-on-joining-the-industry-young-million-miles-and-more/",
+            date: "March 23, 2021",
+            snippet: "Those of you who are fans of Norway’s Got Talent may remember a very young girl who blew everyone away with her amazing voice back in 2014."
         },
         {
             title: "The Voice That Silenced the World: A Profile of Angelina Jordan",
