@@ -41,6 +41,13 @@ document.addEventListener('DOMContentLoaded', function() {
             date: "February 1, 2017",
             snippet: "An article exploring Angelina's deep connection to classic jazz music and her ability to channel the spirit of legendary vocalists at a young age."
         },
+		{
+            title: "From Oslo to the World: Angelina Jordan's Musical Journey",
+            source: "Scandinavia Today",
+            link: "https://www.scandinaviatoday.com/angelina-jordan-feature",
+            date: "November 14, 2016",
+            snippet: "A feature story on Angelina's rise to fame, starting from her win on 'Norway's Got Talent' and her subsequent performances at high-profile events."
+        },
         {
             title: "Angelina Jordan Interviewed by Anne Lindmo, NRK TV",
             source: "NRK TV",
