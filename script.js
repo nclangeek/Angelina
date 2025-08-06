@@ -13,12 +13,26 @@ document.addEventListener('DOMContentLoaded', function() {
             date: "July 15, 2025",
             snippet: "We’ve all heard Elvis Presley’s classic hit “Suspicious Minds,” but did you know that beneath the lush production of the Presley version lies a heartbreaking ballad?"
         },
+		{
+            title: "Best TV audition of all time? Girl, 13, sings staggering original soul version of Queen's 'Bohemian Rhapsody'",
+            source: "Smooth Radio Website",
+            link: "https://www.smoothradio.com/artists/queen/girl-sings-bohemian-rhapsody-americas-got-talent-video/",
+            date: "September 23, 2022",
+            snippet: "A video of 13-year-old Angelina Jordan singing on America's Got Talent in January 2020 has been seen over 24 million times and dubbed 'the greatest audition of all time'."
+        },
         {
             title: "Angelina Jordan on joining the industry young, 'Million Miles', and more",
             source: "The Honey Pop Website",
             link: "https://thehoneypop.com/2021/03/23/angelina-jordan-on-joining-the-industry-young-million-miles-and-more/",
             date: "March 23, 2021",
             snippet: "Those of you who are fans of Norway’s Got Talent may remember a very young girl who blew everyone away with her amazing voice back in 2014."
+        },
+		{
+            title: "Another Kind of Ageless: Singer Angelina Jordan",
+            source: "Escape Into Life Website",
+            link: "https://www.escapeintolife.com/music/music-for-music-angelina-jordan/",
+            date: "August 2018",
+            snippet: "For four years this Norwegian singer has been a major YouTube presence, getting multi-million views for her videos. She is frequently compared to Dinah Washington, Elvis Presley, and Amy Winehouse, among others."
         },
         {
             title: "Angelina Jordan Interviewed by Anne Lindmo, NRK TV",
