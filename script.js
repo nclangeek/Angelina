@@ -13,13 +13,6 @@ document.addEventListener('DOMContentLoaded', function() {
             date: "July 15, 2025",
             snippet: "We’ve all heard Elvis Presley’s classic hit “Suspicious Minds,” but did you know that beneath the lush production of the Presley version lies a heartbreaking ballad?"
         },
-		{
-            title: "Angelina Jordan Opens Up About Her New Single and Life in America",
-            source: "Forbes",
-            link: "https://www.forbes.com/sites/youdonthaveanews.com/angelina-jordan-interview",
-            date: "October 26, 2021",
-            snippet: "In an exclusive interview, Angelina discusses her creative process, musical influences, and the experience of moving to the United States to pursue her career."
-        },
         {
             title: "Angelina Jordan on joining the industry young, 'Million Miles', and more",
             source: "The Honey Pop Website",
@@ -28,54 +21,12 @@ document.addEventListener('DOMContentLoaded', function() {
             snippet: "Those of you who are fans of Norway’s Got Talent may remember a very young girl who blew everyone away with her amazing voice back in 2014."
         },
         {
-            title: "The Voice That Silenced the World: A Profile of Angelina Jordan",
-            source: "The Guardian",
-            link: "https://www.theguardian.com/profile-angelina-jordan-2020",
-            date: "January 20, 2020",
-            snippet: "A deep dive into the journey of the young Norwegian singer who captivated millions on 'America's Got Talent: The Champions' with her powerful rendition of 'Bohemian Rhapsody'."
-        },
-        {
-            title: "Angelina Jordan on the Power of Music and Her Barefoot Vow",
-            source: "Norwegian Public Broadcasting (NRK)",
-            link: "https://www.nrk.no/angelina-jordan-barefoot-vow-interview-2019",
-            date: "September 5, 2019",
-            snippet: "Angelina sits down with NRK to talk about the heartwarming story behind her barefoot performances and her commitment to helping children in need."
-        },
-        {
-            title: "How Angelina Jordan's 'Fly Me to the Moon' Became a Viral Sensation",
-            source: "Billboard",
-            link: "https://www.billboard.com/articles/news/angelina-jordan-fly-me-to-the-moon-viral",
-            date: "March 12, 2018",
-            snippet: "Billboard charts the unexpected rise of Angelina's performance on 'The View' and its impact on her international career."
-        },
-	    {
-            title: "Angelina Jordan's Jazz-Age Soul",
-            source: "Vintage Jazz Magazine",
-            link: "https://www.vintagejazzmag.com/angelina-jordan-feature",
-            date: "February 1, 2017",
-            snippet: "An article exploring Angelina's deep connection to classic jazz music and her ability to channel the spirit of legendary vocalists at a young age."
-        },
-		{
-            title: "From Oslo to the World: Angelina Jordan's Musical Journey",
-            source: "Scandinavia Today",
-            link: "https://www.scandinaviatoday.com/angelina-jordan-feature",
-            date: "November 14, 2016",
-            snippet: "A feature story on Angelina's rise to fame, starting from her win on 'Norway's Got Talent' and her subsequent performances at high-profile events."
-        },
-        {
             title: "Angelina Jordan Interviewed by Anne Lindmo, NRK TV",
             source: "NRK TV",
             link: "https://www.youtube.com/watch?v=-cCLDY0CSZ8",
             date: "November 14, 2015",
             snippet: "Angelina Jordan visited the Norwegian TV show 'Lindmo' on November 14, 2015, to talk about her book 'Mellom To Hjerter' (Between Two Hearts) which was released earlier that week."
         },
-        {
-            title: "The Little Girl with a Big Voice",
-            source: "Huffington Post",
-            link: "https://www.huffingtonpost.com/entry/angelina-jordan-profile_n_6822452.html",
-            date: "August 28, 2015",
-            snippet: "This profile highlights Angelina's early viral success and her captivating stage presence, which many have compared to seasoned professionals."
-        }
     ];
     
     function showPage(pageId) {
