@@ -3,6 +3,8 @@ document.addEventListener('DOMContentLoaded', function() {
     const pageSections = document.querySelectorAll('.page-section');
     const interviewsArticlesContent = document.getElementById('interviews-articles-content');
 
+    console.log('DOM Loaded, interviewsArticlesContent:', interviewsArticlesContent);
+
     const interviewData = [
         {
             title: "Angelina Jordan Opens Up About Her New Single and Life in America",
@@ -32,7 +34,7 @@ document.addEventListener('DOMContentLoaded', function() {
             date: "March 12, 2018",
             snippet: "Billboard charts the unexpected rise of Angelina's performance on 'The View' and its impact on her international career."
         },
-        {
+	    {
             title: "Angelina Jordan's Jazz-Age Soul",
             source: "Vintage Jazz Magazine",
             link: "https://www.vintagejazzmag.com/angelina-jordan-feature",
@@ -40,11 +42,11 @@ document.addEventListener('DOMContentLoaded', function() {
             snippet: "An article exploring Angelina's deep connection to classic jazz music and her ability to channel the spirit of legendary vocalists at a young age."
         },
         {
-            title: "From Oslo to the World: Angelina Jordan's Musical Journey",
-            source: "Scandinavia Today",
-            link: "https://www.scandinaviatoday.com/angelina-jordan-feature",
-            date: "November 14, 2016",
-            snippet: "A feature story on Angelina's rise to fame, starting from her win on 'Norway's Got Talent' and her subsequent performances at high-profile events."
+            title: "Angelina Jordan Interviewed by Anne Lindmo, NRK TV",
+            source: "NRK TV",
+            link: "https://www.youtube.com/watch?v=-cCLDY0CSZ8",
+            date: "November 14, 2015",
+            snippet: "Angelina Jordan visited the Norwegian TV show 'Lindmo' on November 14, 2015, to talk about her book 'Mellom To Hjerter' (Between Two Hearts) which was released earlier that week."
         },
         {
             title: "The Little Girl with a Big Voice",
@@ -77,6 +79,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
     function renderInterviews() {
         if (interviewsArticlesContent) {
+            console.log('Rendering interviews, content element found');
             interviewsArticlesContent.innerHTML = interviewData.map(item => `
                 <div class="bg-white p-6 rounded-lg shadow-lg border-l-4 border-[#880000]">
                     <h3 class="font-playfair text-xl font-bold text-[#880000]">${item.title}</h3>
@@ -85,6 +88,8 @@ document.addEventListener('DOMContentLoaded', function() {
                     <a href="${item.link}" target="_blank" class="inline-block mt-4 btn-primary">Read More</a>
                 </div>
             `).join('');
+        } else {
+            console.log('interviewsArticlesContent not found');
         }
     }
 
