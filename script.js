@@ -3,15 +3,6 @@ document.addEventListener('DOMContentLoaded', function() {
     const pageSections = document.querySelectorAll('.page-section');
     const interviewsArticlesContent = document.getElementById('interviews-articles-content');
 
-    // Hamburger menu toggle code (add this)
-    const menuToggle = document.getElementById('menu-toggle');
-    const mainMenu = document.getElementById('main-menu');
-    if (menuToggle && mainMenu) {
-        menuToggle.addEventListener('click', function() {
-            mainMenu.classList.toggle('hidden');
-        });
-    }
-
     console.log('DOM Loaded, interviewsArticlesContent:', interviewsArticlesContent);
 
     const interviewData = [
@@ -158,18 +149,13 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     }
 
-navButtons.forEach(button => {
-    button.addEventListener('click', function() {
-        const pageId = this.id.replace('nav-', '');
-        showPage(pageId);
-        setActiveNav(this.id);
-
-        // Close menu on mobile after click
-        if (window.innerWidth < 768) {
-            mainMenu.classList.add('hidden');
-        }
+    navButtons.forEach(button => {
+        button.addEventListener('click', function() {
+            const pageId = this.id.replace('nav-', '');
+            showPage(pageId);
+            setActiveNav(this.id);
+        });
     });
-});
 
     // Initial load
     showPage('home');

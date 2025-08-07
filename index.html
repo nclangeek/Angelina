@@ -24,14 +24,7 @@
             <div class="font-playfair text-2xl font-bold text-white tracking-wider">
                 Angelina Jordan
             </div>
-   			<!-- Hamburger button (mobile only) -->
-    		<button id="menu-toggle" class="md:hidden text-white focus:outline-none" aria-label="Open menu">
-        		<svg class="w-8 h-8" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
-            		<path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16"/>
-        		</svg>
-    		</button>
-			<!-- Menu -->
-			<ul id="main-menu" class="absolute top-16 left-0 w-full bg-[#060EB2] md:bg-transparent md:static md:flex md:items-center md:space-x-8 text-white font-lato text-lg z-50 flex-col md:flex-row space-y-4 md:space-y-0 hidden md:flex">
+            <ul class="flex items-center space-x-8 text-white font-lato text-lg">
                 <li><button id="nav-home" class="nav-item active">Home</button></li>
                 <li><button id="nav-rabbit-hole" class="nav-item">Rabbit Hole</button></li>
                 <li><button id="nav-concerts" class="nav-item">Concerts</button></li>
@@ -639,7 +632,7 @@
             </div>
         </section>
 		
-        <section id="albums" class="page-section hidden">
+        <section id="albums" class="page-section">
 			<div class="hero-wrapper">
             <div class="hero-container" style="background-image: url('angelina2.jpg');">
                 <div class="hero-gradient">
@@ -708,8 +701,7 @@
 		
         <section id="interviews-articles" class="page-section hidden">
             <div class="hero-wrapper">
-			<div class="hero-container" style="background-image: url('Angelina-3.jpg');"></div>
-			</div>
+			<div class="hero-container" style="background-image: url('Angelina-3.jpg');">
                 <div class="hero-gradient">
 					<div class="full-width-gradient"></div>
                     <div class="container mx-auto px-6 pb-12 text-white text-center md:text-left">
@@ -725,7 +717,7 @@
                         <h2 class="font-playfair text-4xl font-bold text-[#060EB2]">Insights and Features</h2>
                         <p class="mt-4 text-lg text-[#333333] max-w-4xl mx-auto">Here you'll find a curated collection of interviews and articles featuring Angelina Jordan, offering unique insights into her music, inspirations, and personal journey.</p>
                     </div>
-                    <div id="interviews-articles-content" class="max-w-3xl mx-auto space-y-8">
+                    <div id="interviews-articles-content" class="grid grid-cols-1 md:grid-cols-2 gap-8">
 					</div>
                 </div>
             </div>
@@ -775,7 +767,7 @@
                         <a href="https://www.patreon.com/angelinajordan" target="_blank" rel="noopener noreferrer" class="btn-secondary flex items-center justify-center space-x-2">
                             <img src="patreon.png" alt="Patreon Icon" class="h-12 w-12">
                             <span>Patreon</span
-							</a>
+                        </a>
 						<a href="https://music.apple.com/us/artist/angelina-jordan/949905441" target="_blank" rel="noopener noreferrer" class="btn-secondary flex items-center justify-center space-x-2">
 							<img src="apple_music.png" alt="Apple Music Icon" class="h-12 w-12">
 							<span>Apple Music</span>
@@ -834,6 +826,6 @@
         </div>
     </footer>
 
-
+    <script src="script.js" defer></script>
 </body>
 </html>
