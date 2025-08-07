@@ -69,6 +69,13 @@ document.addEventListener('DOMContentLoaded', function() {
             date: "February 19, 2022",
             snippet: "Angelina Jordan is a 16-year-old singer who became a viral sensation when she auditioned for the 2014 season of Norway's Got Talent when she was just 8 years old."
         },
+		{
+            title: "What Angelina Jordan has been up to since AGT: The Champions Season 2",
+            source: "Screen Rant Website",
+            link: "https://screenrant.com/americas-got-talent-champions-angelina-jordan-career-update/",
+            date: "July 3, 2021",
+            snippet: "Angelina Jordan is one of the most memorable contestants from America's Got Talent: The Champions season two. "
+        },
         {
             title: "Angelina Jordan on joining the industry young, 'Million Miles', and more",
             source: "The Honey Pop Website",
