@@ -5,6 +5,29 @@ body {
     font-family: 'Lora', serif;
     background-color: #E7E7FF; /* Very light rose/pink */
     color: #333333; /* Dark charcoal for readability */
+    margin: 0; /* Remove default body margin to prevent gaps */
+    padding: 0; /* Remove default body padding */
+}
+
+/* Header and Navigation */
+header {
+    position: relative;
+    z-index: 10; /* Ensure nav stays above hero */
+	width: 100%; /* Ensure header takes full width */
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem; 
+    padding: 1rem 0;
+    background-color: #060EB2;
+    margin: 0;
+	width: 100%; /* Ensure nav takes full width */
+	box-sizing: border-box; /* Include padding in width calculation */
+	min-width: 100vw;
+	overflow: hidden;
+	
 }
 
 /* Custom Font Classes */
@@ -36,6 +59,7 @@ body {
 }
 
 .nav-item:hover::after,
+
 .nav-item.active::after {
     width: 100%;
     left: 0;
@@ -48,14 +72,71 @@ body {
 
 /* Page Section Styling */
 .page-section {
-    min-height: calc(100vh - 120px); /* Adjust based on header/footer height */
-    padding-top: 2rem;
+    min-height: calc(100vh - 100px); /* Adjusted to match header + footer height (e.g., ~100px total) */
+    padding-top: 0; /* Remove top padding to align with hero */
     padding-bottom: 2rem;
 }
 
+/* Hero Wrapper Adjustment */
+.hero-wrapper {
+    position: relative;
+    width: 100%;
+    height: 0;
+    padding-top: 75%; /* 4:3 aspect ratio */
+    top: 0; /* Ensure it starts at the top */
+    margin-top: -1px; /* Overlap slightly to cover any pixel gap */
+}
+
+/* Hero Container Adjustment */
+.hero-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%; /* Ensure it fills the wrapper */
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: transparent;
+}
+
+/* Full-width gradient and hero-gradient */
+.full-width-gradient {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 200px; /* Adjust this height to cover the text area + padding */
+    background: linear-gradient(to top, rgba(0,0,0,0.5), rgba(0,0,0,0));
+    pointer-events: none;
+}
+
+.hero-gradient {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    align-items: end;
+}
+
+/* Button Styles */
+.btn-primary {
+    background-color: #060EB2; /* Deep Red */
+    color: white;
+    font-weight: bold;
+    padding: 0.75rem 1.5rem;
+    border-radius: 9999px;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+    text-decoration: none;
+    display: inline-block;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.btn-primary:hover {
+    background-color: #D4AF37; /* Muted Gold on hover */
+    color: #060EB2; /* Dark Blue text on hover for contrast */
+}
 
 /* General Link Styling within content */
-/* This is the new addition for making hyperlinks visible */
 main a {
     color: #060EB2; /* Deep Red for links */
     text-decoration: underline;
@@ -67,87 +148,6 @@ main a:hover {
     text-decoration: underline;
 }
 
-/* Button Styles */
-.btn-primary {
-    background-color: #060EB2; /* Deep Red */
-    color: white;
-    font-weight: bold;
-    padding: 0.75rem 1.5rem; /* Equivalent to py-3 px-6 */
-    border-radius: 9999px; /* Equivalent to rounded-full */
-    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -2px rgba(0, 0, 0, 0.06); /* Equivalent to shadow-md */
-    transition-property: all; /* Equivalent to transition-all */
-    transition-duration: 300ms; /* Equivalent to duration-300 */
-    transition-timing-function: ease-in-out; /* Equivalent to ease-in-out */
-    text-decoration: none; /* Remove underline from links */
-    display: inline-block; /* Allows padding and vertical alignment */
-}
-.btn-primary:hover {
-    background-color: #D4AF37; /* Muted Gold on hover */
-    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05); /* Equivalent to shadow-lg */
-    transform: scale(1.05); /* Equivalent to scale-105 */
-	color: #060EB2
-}
-
-.btn-secondary {
-    background-color: #CCCCFC; /* Muted Pink */
-    color: #060EB2; /* Deep Red text */
-    font-weight: bold;
-    padding-top: 0.5rem;
-    padding-bottom: 0.5rem;
-    padding-left: 1.5rem;
-    padding-right: 1.5rem;
-    border-radius: 9999px;
-    transition-property: all;
-    transition-duration: 300ms;
-    transition-timing-function: ease-in-out;
-    text-decoration: none;
-    display: inline-block;
-}
-
-.btn-secondary:hover {
-    background-color: #D4AF37; /* Muted Gold on hover */
-    color: blue; /* White text on hover for contrast */
-    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
-    transform: scale(1.05);
-}
-
-/* Hero Section Specifics */
-.hero-wrapper {
-	position: relative;
-	width: 100%;
-	height: 0;
-	padding-top: 75%; /* 16:9 aspect ratio; adjust based on your images (e.g., 75% for 4:3) */
-}
-
-.hero-container {
-    position: absolute;
-	top: 0;
-	left: 0;
-    width: 100%;
-    height: 100%; /* Allows dynamic height adjustment */
-    background-size: contain; /* Scales image to fit within container, no cropping */
-    background-position: center; /* Centers the image */
-    background-repeat: no-repeat; /* Prevents tiling */
-    background-color: transparent;
-}
-
-.full-width-gradient {
-    position: absolute;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    height: 200px; /* Adjust this height to cover the text area + padding */
-    background: linear-gradient(to top, rgba(0,0,0,0.5), rgba(0,0,0,0));
-    pointer-events: none; /* Prevents interference with clicks on the image or text */
-}
-
-.hero-gradient {
-    position: absolute;
-    inset: 0;
-    display: flex;
-    align-items: end;
-}
-
 /* Responsive adjustments */
 @media (min-width: 768px) {
     .hero-wrapper {
@@ -157,7 +157,35 @@ main a:hover {
 
 /* Ensure the container can handle the gradient */
 .container.mx-auto.px-6.pb-12 {
-    position: relative; /* Allows the gradient to be contained */
+    position: relative;
+    margin-left: +1%; /* Moves left by 20% of the container width */
+    transform: translateY(20%); /* Moves down by 20% of the hero-container height */
+    width: 100%;
+    max-width: 48rem;
+    padding-left: 1rem;
+}
+
+/* Responsive Utilities */
+@media (max-width: 768px) {
+    .bg-fixed {
+        background-attachment: scroll;
+    }
+    .container.mx-auto.px-6.pb-12 {
+        margin-left: -10%; /* Less left shift on mobile */
+        transform: translateY(10%); /* Less down shift on mobile */
+    }
+    .page-section {
+        min-height: calc(100vh - 100px); /* Adjusted for mobile */
+        padding-top: 0;
+        padding-bottom: 2rem;
+    }
+    .nav-item {
+        display: block;
+        margin: 0.5rem 0;
+    }
+    .hero-wrapper {
+        padding-top: 75%; /* Squarer aspect on mobile for better visibility */
+    }
 }
 
 /* Optimize bg-fixed for performance */
@@ -165,24 +193,3 @@ main a:hover {
     will-change: transform;
     background-attachment: fixed;
 }
-
-/* Responsive Utilities (if needed, these would typically be in Tailwind config or directly as Tailwind classes) */
-@media (max-width: 768px) { 
-	.bg-fixed { 
-		background-attachment: scroll; 
-	}
-    /* Adjustments for smaller screens */
-	.page-section {
-		padding: 1rem 0;
-	}
-	.nav-item {
-		display: block;
-		margin: 0.5rem 0;
-	}
-	.hero-wrapper {
-	padding-top: 75%; /* Squarer aspect on mobile for better visibility */
-   	}
-}
-
-
-
