@@ -148,12 +148,26 @@ document.addEventListener('DOMContentLoaded', function() {
             console.log('interviewsArticlesContent not found');
         }
     }
+    const menuToggle = document.getElementById('menu-toggle');
+    const mainMenu = document.getElementById('main-menu');
 
+    // Hamburger toggle
+    if (menuToggle && mainMenu) {
+        menuToggle.addEventListener('click', function() {
+            mainMenu.classList.toggle('hidden');
+        });
+    }
+    
     navButtons.forEach(button => {
         button.addEventListener('click', function() {
             const pageId = this.id.replace('nav-', '');
             showPage(pageId);
             setActiveNav(this.id);
+
+        // Close menu on mobile after click
+        if (window.innerWidth < 768 && mainMenu.classList.contains('flex-col')) {
+            mainMenu.classList.add('hidden');
+            }
         });
     });
 

@@ -20,19 +20,26 @@
 </head>
 <body class="bg-[#E7E7FF] text-[#333333]">
     <header class="bg-[#060EB2]/95 backdrop-blur-sm sticky top-0 z-50 shadow-lg">
-        <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
-            <div class="font-playfair text-2xl font-bold text-white tracking-wider">
-                Angelina Jordan
-            </div>
-            <ul class="flex items-center space-x-8 text-white font-lato text-lg">
-                <li><button id="nav-home" class="nav-item active">Home</button></li>
-                <li><button id="nav-rabbit-hole" class="nav-item">Rabbit Hole</button></li>
-                <li><button id="nav-concerts" class="nav-item">Concerts</button></li>
-				<li><button id="nav-albums" class="nav-item">Albums</button></li>
-                <li><button id="nav-interviews-articles" class="nav-item">Interviews & Articles</button></li>
-                <li><button id="nav-about" class="nav-item">About & Links</button></li>
-            </ul>
-        </nav>
+		<nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+    		<div class="font-playfair text-2xl font-bold text-white tracking-wider">
+	        	Angelina Jordan
+	    	</div>
+    		<!-- Hamburger button (mobile only) -->
+    		<button id="menu-toggle" class="md:hidden text-white focus:outline-none" aria-label="Open menu">
+	        	<svg class="w-8 h-8" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+    	        	<path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16"/>
+        		</svg>
+    		</button>
+    		<!-- Main menu -->
+    		<ul id="main-menu" class="hidden absolute top-16 left-0 w-full bg-[#060EB2] md:bg-transparent md:static md:flex md:items-center md:space-x-8 text-white font-lato text-lg z-50 flex-col md:flex-row space-y-4 md:space-y-0">
+     	   		<li><button id="nav-home" class="nav-item active">Home</button></li>
+     	   		<li><button id="nav-rabbit-hole" class="nav-item">Rabbit Hole</button></li>
+        		<li><button id="nav-concerts" class="nav-item">Concerts</button></li>
+        		<li><button id="nav-albums" class="nav-item">Albums</button></li>
+        		<li><button id="nav-interviews-articles" class="nav-item">Interviews & Articles</button></li>
+        		<li><button id="nav-about" class="nav-item">About & Links</button></li>
+    		</ul>
+		</nav>
     </header>
 
     <main>
