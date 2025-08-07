@@ -3,6 +3,15 @@ document.addEventListener('DOMContentLoaded', function() {
     const pageSections = document.querySelectorAll('.page-section');
     const interviewsArticlesContent = document.getElementById('interviews-articles-content');
 
+    // Hamburger menu toggle code (add this)
+    const menuToggle = document.getElementById('menu-toggle');
+    const mainMenu = document.getElementById('main-menu');
+    if (menuToggle && mainMenu) {
+        menuToggle.addEventListener('click', function() {
+            mainMenu.classList.toggle('hidden');
+        });
+    }
+
     console.log('DOM Loaded, interviewsArticlesContent:', interviewsArticlesContent);
 
     const interviewData = [
