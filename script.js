@@ -14,6 +14,20 @@ document.addEventListener('DOMContentLoaded', function() {
             snippet: "We’ve all heard Elvis Presley’s classic hit “Suspicious Minds,” but did you know that beneath the lush production of the Presley version lies a heartbreaking ballad?"
         },
 		{
+            title: "Angelina Jordan 10 Years in the Making",
+            source: "Angelina Jordan Official YouTube Channel",
+            link: "https://www.themusicman.uk/angelina-jordan-reimagines-elvis-classic/",
+            date: "March 29, 2024",
+            snippet: "In that moment of performing for the first time on stage I was like I knew that my music was bigger than myself this one clip just went viral of Gloomy Sunday and everything really like changed in a way that I never expected."
+        },		
+		{
+            title: "Angelina Teases Her Forthcoming Debut Album | UNFO 2022 Red Carpet with Steven Lim",
+            source: "Character Media",
+            link: "https://www.smoothradio.com/artists/queen/girl-sings-bohemian-rhapsody-americas-got-talent-video/",
+            date: "January 25, 2023",
+            snippet: "“America’s Got Talent” alum and viral sensation Angelina Jordan shares what’s coming up next for her and dishes on her new album."
+        },
+		{
             title: "Best TV audition of all time? Girl, 13, sings staggering original soul version of Queen's 'Bohemian Rhapsody'",
             source: "Smooth Radio Website",
             link: "https://www.smoothradio.com/artists/queen/girl-sings-bohemian-rhapsody-americas-got-talent-video/",
@@ -27,6 +41,20 @@ document.addEventListener('DOMContentLoaded', function() {
             date: "March 23, 2021",
             snippet: "Those of you who are fans of Norway’s Got Talent may remember a very young girl who blew everyone away with her amazing voice back in 2014."
         },
+		{
+            title: "Viral Singing Prodigy Angelina Jordan Releases New Single 'Million Miles'",
+            source: "People",
+            link: "https://people.com/music/angelina-jordan-talks-child-stardom-new-single-million-miles/",
+            date: "February 4, 2021",
+            snippet: "Norwegian singer Angelina Jordan — who went viral with her giant vocals in 2014 — is back with her new single 'Million Miles'."
+        },
+        {
+            title: "11-year-old Angelina Jordan performs 'It's Now or Never'",
+            source: "Elvis Australia Official Elvis Presley Fan Club",
+            link: "https://www.elvis.com.au/presley/11-year-old-angelina-jordan-performs-elvis-it-s-now-or-never.shtml",
+            date: "September 5, 2019",
+            snippet: "Here we have a video of 11-year-old Angelina Jordan performing Elvis Presley's legendary It's Now or Never in front of the crowd at Fredriksten castle in Halden."
+        },		
 		{
             title: "Another Kind of Ageless: Singer Angelina Jordan",
             source: "Escape Into Life Website",
