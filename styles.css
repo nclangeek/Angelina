@@ -85,6 +85,7 @@ main a:hover {
     background-color: #D4AF37; /* Muted Gold on hover */
     box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05); /* Equivalent to shadow-lg */
     transform: scale(1.05); /* Equivalent to scale-105 */
+	color: #060EB2
 }
 
 .btn-secondary {
@@ -105,7 +106,7 @@ main a:hover {
 
 .btn-secondary:hover {
     background-color: #D4AF37; /* Muted Gold on hover */
-    color: white; /* White text on hover for contrast */
+    color: blue; /* White text on hover for contrast */
     box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
     transform: scale(1.05);
 }
