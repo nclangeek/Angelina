@@ -130,6 +130,16 @@ main a:hover {
     background-color: transparent;
 }
 
+.full-width-gradient {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 200px; /* Adjust this height to cover the text area + padding */
+    background: linear-gradient(to top, rgba(0,0,0,0.5), rgba(0,0,0,0));
+    pointer-events: none; /* Prevents interference with clicks on the image or text */
+}
+
 .hero-gradient {
     position: absolute;
     inset: 0;
@@ -142,6 +152,11 @@ main a:hover {
     .hero-wrapper {
         padding-top: 75%; /* Maintain aspect ratio on desktop */
     }
+}
+
+/* Ensure the container can handle the gradient */
+.container.mx-auto.px-6.pb-12 {
+    position: relative; /* Allows the gradient to be contained */
 }
 
 /* Optimize bg-fixed for performance */
