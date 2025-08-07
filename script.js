@@ -158,13 +158,18 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     }
 
-    navButtons.forEach(button => {
-        button.addEventListener('click', function() {
-            const pageId = this.id.replace('nav-', '');
-            showPage(pageId);
-            setActiveNav(this.id);
-        });
+navButtons.forEach(button => {
+    button.addEventListener('click', function() {
+        const pageId = this.id.replace('nav-', '');
+        showPage(pageId);
+        setActiveNav(this.id);
+
+        // Close menu on mobile after click
+        if (window.innerWidth < 768) {
+            mainMenu.classList.add('hidden');
+        }
     });
+});
 
     // Initial load
     showPage('home');
