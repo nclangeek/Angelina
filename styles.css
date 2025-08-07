@@ -3,7 +3,7 @@
 /* General Body and Font Styles */
 body {
     font-family: 'Lora', serif;
-    background-color: #FDF2F4; /* Very light rose/pink */
+    background-color: #F5F5FF; /* Very light rose/pink */
     color: #333333; /* Dark charcoal for readability */
 }
 
@@ -57,7 +57,7 @@ body {
 /* General Link Styling within content */
 /* This is the new addition for making hyperlinks visible */
 main a {
-    color: #880000; /* Deep Red for links */
+    color: #060EB2; /* Deep Red for links */
     text-decoration: underline;
     transition: color 0.3s ease;
 }
@@ -69,7 +69,7 @@ main a:hover {
 
 /* Button Styles */
 .btn-primary {
-    background-color: #880000; /* Deep Red */
+    background-color: #060EB2; /* Deep Red */
     color: white;
     font-weight: bold;
     padding: 0.75rem 1.5rem; /* Equivalent to py-3 px-6 */
@@ -88,8 +88,8 @@ main a:hover {
 }
 
 .btn-secondary {
-    background-color: #F7D7DD; /* Muted Pink */
-    color: #880000; /* Deep Red text */
+    background-color: #CCCCFC; /* Muted Pink */
+    color: #060EB2; /* Deep Red text */
     font-weight: bold;
     padding-top: 0.5rem;
     padding-bottom: 0.5rem;
