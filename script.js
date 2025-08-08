@@ -35,6 +35,13 @@ document.addEventListener('DOMContentLoaded', function() {
             snippet: "On December 8, 2023 Angelina Jordan Official/Republic Records/UMG released her new 5-song Christmas album, Driving Home for Christmas."
         },		
 		{
+            title: "Angelina Jordan - The Next Great One | AMR Retrospective EP01",
+            source: "Arab Man Reacts YouTube Channel",
+            link: "https://www.youtube.com/watch?v=kbq9wwURy0w",
+            date: "October 7, 2023",
+            snippet: "Whispers fill the air a buzzing anticipation that's electric and tangible the audience sits at the edge of their seats waiting. Suddenly a soulful voice mature beyond its years envelops the room, every note dripping with raw emotion tells a story this isn't an ordinary talent this is a vocal prodigy from Norway painting stories with her voice this is Angelina."
+        },		
+		{
             title: "Angelina Jordan Releases New EP, 'Old Enough'",
             source: "Prelude Press",
             link: "https://preludepress.com/news/2023/07/21/angelina-jordan-old-enough/",
