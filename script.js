@@ -70,6 +70,13 @@ document.addEventListener('DOMContentLoaded', function() {
             snippet: "A video of 13-year-old Angelina Jordan singing on America's Got Talent in January 2020 has been seen over 24 million times and dubbed 'the greatest audition of all time'."
         },
 		{
+            title: "Angelina Jordan on “Festivalsommer” at NRK TV",
+            source: "NRK TV",
+            link: "https://www.youtube.com/watch?v=HKK66K5u1Fc",
+            date: "September 23, 2022",
+            snippet: "We fell for her when she was 8 years old and sang on TV. And.. yes... She sings very very beautifully!"
+        },	
+		{
             title: "NRK TV Interview at Kongsberg Jazz Festival July 2022",
             source: "NRK TV - Kongsberg",
             link: "https://www.youtube.com/watch?v=u8zSWTlCltA",
