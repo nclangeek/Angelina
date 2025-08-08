@@ -23,7 +23,7 @@ document.addEventListener('DOMContentLoaded', function() {
 		{
             title: "Angelina Jordan 10 Years in the Making",
             source: "Angelina Jordan Official YouTube Channel",
-            link: "https://www.themusicman.uk/angelina-jordan-reimagines-elvis-classic/",
+            link: "https://www.youtube.com/watch?v=I_59PZXkusc",
             date: "March 29, 2024",
             snippet: "In that moment of performing for the first time on stage I was like I knew that my music was bigger than myself this one clip just went viral of Gloomy Sunday and everything really like changed in a way that I never expected."
         },		
