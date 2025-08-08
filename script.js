@@ -11,7 +11,14 @@ document.addEventListener('DOMContentLoaded', function() {
             source: "The Music Man Website",
             link: "https://www.themusicman.uk/angelina-jordan-reimagines-elvis-classic/",
             date: "July 15, 2025",
-            snippet: "We’ve all heard Elvis Presley’s classic hit “Suspicious Minds,” but did you know that beneath the lush production of the Presley version lies a heartbreaking ballad?"
+            snippet: "Our next guest took Norway by storm when she appeared in Norske Talenter in 2014 a little paw at just 8 years old barefoot and with a voice the likes of which we had never heard, she sang her way to the top with legendary jazz songs"
+        },
+		{
+            title: "Angelina Jordan interviewed on live TV in Norway (God Morgen Norge (Good Morning Norway))",
+            source: "God Morgen Norge (Good Morning Norway)",
+            link: "https://www.youtube.com/watch?v=fPGgGAJfGXY",
+            date: "June 6, 2024",
+            snippet: "In that moment of performing for the first time on stage I was like I knew that my music was bigger than myself this one clip just went viral of Gloomy Sunday and everything really like changed in a way that I never expected."
         },
 		{
             title: "Angelina Jordan 10 Years in the Making",
@@ -40,6 +47,13 @@ document.addEventListener('DOMContentLoaded', function() {
             link: "https://www.smoothradio.com/artists/queen/girl-sings-bohemian-rhapsody-americas-got-talent-video/",
             date: "January 25, 2023",
             snippet: "“America’s Got Talent” alum and viral sensation Angelina Jordan shares what’s coming up next for her and dishes on her new album."
+        },
+		{
+            title: "Angelina Jordan Documentary - Born to Sing - The Early Years",
+            source: "Wrapped in a Warm Blanket Podcast",
+            link: "https://www.youtube.com/watch?v=jE6x9V8Cnyw",
+            date: "November 24, 2022",
+            snippet: "The Angelina Jordan story is not just another story about a talented young singer. This is a special story of how dreams can come true. Some people in the business already know Angelina Jordan very well, and they're already very impressed with her. Quincy Jones, the legendary music producer, said that Angelina reminds him of Michael Jackson in younger days. And he should know."
         },
 		{
             title: "13-yr-old's completely unique 'Bohemian Rhapsody' rendition was so great it even wowed Queen",
