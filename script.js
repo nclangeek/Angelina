@@ -28,6 +28,17 @@ document.addEventListener('DOMContentLoaded', function() {
             snippet: "In that moment of performing for the first time on stage I was like I knew that my music was bigger than myself this one clip just went viral of Gloomy Sunday and everything really like changed in a way that I never expected."
         },		
 		{
+            title: "Teen silences the room with her dreamy cover of 'Unchained Melody'",
+            source: "See it Live Website",
+            link: "https://seeitlive.co/teen-unchained-melody-angelina-jordan/?4f1e054b-09ef-44dd-bb70-6f5325e49f62=1",
+            date: "February 26, 2024",
+            snippet: "This remarkable rendition was part of a tribute to Nobel Peace Prize laureate Narges Mohammadi. Angelina’s interpretation of this timeless classic is not just a musical performance; it’s a profound expression of emotion and artistry."
+        },		
+
+		
+		
+		
+		{
             title: "Angelina Jordan Blog Entries by Ken Chawkin",
             source: "The Uncarved Blog",
             link: "https://theuncarvedblog.com/tag/angelina-jordan/",
