@@ -21,7 +21,7 @@ nav {
     justify-content: center;
     gap: 1.5rem; 
     padding: 1rem 0;
-    background-color: #060EB2;
+    background-color: #04041C;
     margin: 0;
 	width: 100%; /* Ensure nav takes full width */
 	box-sizing: border-box; /* Include padding in width calculation */
@@ -120,7 +120,7 @@ nav {
 
 /* Button Styles */
 .btn-primary {
-    background-color: #060EB2; /* Deep Red */
+    background-color: #04041C; /* Deep Red */
     color: white;
     font-weight: bold;
     padding: 0.75rem 1.5rem;
@@ -133,12 +133,12 @@ nav {
 
 .btn-primary:hover {
     background-color: #D4AF37; /* Muted Gold on hover */
-    color: #060EB2; /* Dark Blue text on hover for contrast */
+    color: #04041C; /* Dark Blue text on hover for contrast */
 }
 
 /* General Link Styling within content */
 main a {
-    color: #060EB2; /* Deep Red for links */
+    color: #04041C; /* Deep Red for links */
     text-decoration: underline;
     transition: color 0.3s ease;
 }

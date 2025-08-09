@@ -172,8 +172,8 @@ document.addEventListener('DOMContentLoaded', function() {
         if (interviewsArticlesContent) {
             console.log('Rendering interviews, content element found');
             interviewsArticlesContent.innerHTML = interviewData.map(item => `
-                <div class="bg-white p-6 rounded-lg shadow-lg border-l-4 border-[#060EB2]">
-                    <h3 class="font-playfair text-xl font-bold text-[#060EB2]">${item.title}</h3>
+                <div class="bg-white p-6 rounded-lg shadow-lg border-l-4 border-[#04041C]">
+                    <h3 class="font-playfair text-xl font-bold text-[#04041C]">${item.title}</h3>
                     <p class="mt-2 text-[#555555] italic">Source: ${item.source} | Published: ${item.date}</p>
                     <p class="mt-4 text-[#333333]">${item.snippet}</p>
                     <a href="${item.link}" target="_blank" class="inline-block mt-4 btn-primary">Read More</a>
