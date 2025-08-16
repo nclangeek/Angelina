@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://velvety-gecko-bc61ef.netlify.app/sitemap.xml
