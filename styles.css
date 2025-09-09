@@ -13,7 +13,7 @@ body {
 header {
     position: relative;
     z-index: 10; /* Ensure nav stays above hero */
-	width: 100%; /* Ensure header takes full width */
+    width: 100%; /* Ensure header takes full width */
 }
 
 nav {
@@ -23,11 +23,10 @@ nav {
     padding: 1rem 0;
     background-color: #04041C;
     margin: 0;
-	width: 100%; /* Ensure nav takes full width */
-	box-sizing: border-box; /* Include padding in width calculation */
-	min-width: 100vw;
-	overflow: hidden;
-	
+    width: 100%; /* Ensure nav takes full width */
+    box-sizing: border-box; /* Include padding in width calculation */
+    min-width: 100vw;
+    overflow: hidden;
 }
 
 /* Custom Font Classes */
@@ -59,7 +58,6 @@ nav {
 }
 
 .nav-item:hover::after,
-
 .nav-item.active::after {
     width: 100%;
     left: 0;
@@ -148,6 +146,35 @@ main a:hover {
     text-decoration: underline;
 }
 
+/* Album Card Styling - Updated to respect font-playfair and text-4xl */
+.album-card {
+    background-color: white;
+    padding: 1.5rem;
+    margin: 2rem 0;
+    border-radius: 0.5rem;
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+    border-left: 4px solid #D4AF37; /* Gold accent to distinguish from other sections */
+}
+
+.album-card h3 {
+    font-size: 2.25rem; /* Matches text-4xl */
+    font-weight: bold;
+    color: #04041C; /* Dark blue to match Original Creations */
+    margin-bottom: 1rem;
+    font-family: 'Great Vibes', cursive; /* Ensures font-playfair is applied */
+}
+
+/* Song list within album card */
+.album-card ol {
+    margin-left: 1.5rem;
+    padding-left: 0;
+}
+
+.album-card li {
+    margin-bottom: 1rem;
+    line-height: 1.6;
+}
+
 /* Responsive adjustments */
 @media (min-width: 768px) {
     .hero-wrapper {
@@ -185,6 +212,16 @@ main a:hover {
     }
     .hero-wrapper {
         padding-top: 75%; /* Squarer aspect on mobile for better visibility */
+    }
+
+    /* Responsive album card */
+    .album-card {
+        margin: 1rem 0;
+        padding: 1rem;
+    }
+
+    .album-card h3 {
+        font-size: 1.75rem; /* Adjusted text-4xl for mobile readability */
     }
 }
 
