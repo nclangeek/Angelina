@@ -167,6 +167,7 @@ document.addEventListener('DOMContentLoaded', function() {
         if (activeSection) {
             activeSection.classList.remove('hidden');
         }
+		window.scrollTo({ top: 0, behavior: 'smooth' });
     }
 
     function setActiveNav(activeButtonId) {
